@@ -14,7 +14,7 @@
         <form v-else @submit.prevent="saveSettings">
             <div v-if="settings.length > 0" class="card p-3">
                 <div v-for="(setting, index) in settings" :key="setting.id" class="mb-3">
-                    <label class="form-label fw-bold">{{ setting.key_label }}</label>
+                    <label class="form-label fw-bold">{{ setting.label }}</label>
                     <!-- input -->
                     <input v-if="setting.type === 'string'" type="text" class="form-control" v-model="setting.value" />
                     <!-- textarea -->
