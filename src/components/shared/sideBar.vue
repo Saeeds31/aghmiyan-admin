@@ -293,7 +293,7 @@ const menuItems = ref(
 
     {
       name: "تنظیمات",
-      permissions: ['settings_view'],
+      permissions: ['setting_view'],
       icon: "bi-gear",
       link: "/settings",
     },
