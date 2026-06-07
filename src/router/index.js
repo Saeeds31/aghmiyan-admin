@@ -15,7 +15,11 @@ const routes = [
     name: "users-create",
     component: () => import("@/views/users/User/create.vue"),
   },
-
+  {
+    path: "/settings",
+    name: "settings",
+    component: () => import("@/views/settings/index.vue"),
+  },
   {
     path: "/users/:id/edit",
     name: "users-edit",
